@@ -12,5 +12,7 @@ namespace DataLayer.Model
 
         public int orderId { get; set; }
         public Order order { get; set; }
+
+        public Product Product { get; set; }
     }
 }

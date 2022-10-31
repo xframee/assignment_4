@@ -67,15 +67,14 @@ namespace DataLayer
             modelBuilder.Entity<Customer>().Property(x => x.phoneNumber).HasColumnName("phone");
             modelBuilder.Entity<Customer>().Property(x => x.fax).HasColumnName("fax");
             */
-            
+
             modelBuilder.Entity<OrderDetails>().ToTable("orderdetails");
             modelBuilder.Entity<OrderDetails>().Property(x => x.Id).HasColumnName("orderid");
             modelBuilder.Entity<OrderDetails>().Property(x => x.productId).HasColumnName("productid");
             modelBuilder.Entity<OrderDetails>().Property(x => x.price).HasColumnName("unitprice");
             modelBuilder.Entity<OrderDetails>().Property(x => x.quantity).HasColumnName("quantity");
             modelBuilder.Entity<OrderDetails>().Property(x => x.discount).HasColumnName("discount");
-            
-
+            modelBuilder.Entity<OrderDetails>().Property(x => x.orderId).HasColumnName("orderid");
 
         }
     }

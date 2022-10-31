@@ -17,8 +17,7 @@ namespace DataLayer.Model
         public string shipPostalCode { get; set; }
         public string shipcountry { get; set; }
 
-
-        public OrderDetails details { get; set; }
+        public OrderDetails OrderDetails { get; set; }
     }
 }
 
