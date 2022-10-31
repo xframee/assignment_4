@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{3F25C342-47BE-4423-8BA3-0B1DC41435BF}|Default">
+  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="codeAlong4/Program.cs">
+    <Files>
+      <File FileName="codeAlong4/Program.cs" Line="17" Column="2" />
+      <File FileName="EF/NorthwindContext.cs" Line="36" Column="6" />
+      <File FileName="EF/Program.cs" Line="9" Column="2" />
+      <File FileName="EF/Category.cs" Line="5" Column="18" />
+      <File FileName="EF/Product.cs" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="codeAlong4" expanded="True">
+            <Node name="codeAlong4" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="EF" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.codeAlong4 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

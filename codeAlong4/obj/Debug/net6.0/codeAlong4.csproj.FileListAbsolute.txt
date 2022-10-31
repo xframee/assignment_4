@@ -1,0 +1,17 @@
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/bin/Debug/net6.0/codeAlong4
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/bin/Debug/net6.0/codeAlong4.deps.json
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/bin/Debug/net6.0/codeAlong4.runtimeconfig.json
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/bin/Debug/net6.0/codeAlong4.dll
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/bin/Debug/net6.0/codeAlong4.pdb
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/bin/Debug/net6.0/Npgsql.dll
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.csproj.AssemblyReference.cache
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.AssemblyInfoInputs.cache
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.AssemblyInfo.cs
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.csproj.CoreCompileInputs.cache
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.csproj.CopyComplete
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.dll
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/refint/codeAlong4.dll
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.pdb
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/codeAlong4.genruntimeconfig.cache
+/Users/alexanderchristensen/Projects/codeAlong4/codeAlong4/obj/Debug/net6.0/ref/codeAlong4.dll

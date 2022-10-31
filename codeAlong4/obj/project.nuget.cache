@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FunI0uv1GTS0VJZwcYoIPTQUONu/7NTZCPZuMvI0pyw0rLew+a1CZ0Usc8HDOUcecvLYXcI1Pavq9Thkl79yIw==",
+  "success": true,
+  "projectFilePath": "/Users/alexanderchristensen/Desktop/Projects/codeAlong4/codeAlong4/codeAlong4.csproj",
+  "expectedPackageFiles": [
+    "/Users/alexanderchristensen/.nuget/packages/npgsql/6.0.7/npgsql.6.0.7.nupkg.sha512",
+    "/Users/alexanderchristensen/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

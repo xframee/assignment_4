@@ -1,0 +1,12 @@
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/bin/Debug/net6.0/DataLayer.deps.json
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/bin/Debug/net6.0/DataLayer.dll
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/bin/Debug/net6.0/DataLayer.pdb
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/DataLayer.csproj.AssemblyReference.cache
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/DataLayer.AssemblyInfoInputs.cache
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/DataLayer.AssemblyInfo.cs
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/DataLayer.csproj.CoreCompileInputs.cache
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/DataLayer.dll
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/refint/DataLayer.dll
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/DataLayer.pdb
+/Users/alexanderchristensen/Desktop/Projects/codeAlong4/DataLayer/obj/Debug/net6.0/ref/DataLayer.dll
