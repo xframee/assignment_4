@@ -15,7 +15,7 @@ namespace DataLayer
 
         public DbSet<Order> Orders { get; set; }
 
-        public DbSet<Customer> Customers { get; set; }
+        //public DbSet<Customer> Customers { get; set; }
 
         public DbSet<OrderDetails> OrderDetails { get; set; }
 
@@ -41,7 +41,7 @@ namespace DataLayer
             modelBuilder.Entity<Product>().Property(x => x.CategoryId).HasColumnName("categoryid");
 
             modelBuilder.Entity<Order>().ToTable("orders");
-            modelBuilder.Entity<Order>().Property(x => x.orderId).HasColumnName("orderid");
+            modelBuilder.Entity<Order>().Property(x => x.Id).HasColumnName("orderid");
             modelBuilder.Entity<Order>().Property(x => x.customerId).HasColumnName("customerid");
             modelBuilder.Entity<Order>().Property(x => x.employeeId).HasColumnName("employeeid");
             modelBuilder.Entity<Order>().Property(x => x.orderDate).HasColumnName("orderdate");
@@ -54,6 +54,7 @@ namespace DataLayer
             modelBuilder.Entity<Order>().Property(x => x.shipPostalCode).HasColumnName("shippostalcode");
             modelBuilder.Entity<Order>().Property(x => x.shipcountry).HasColumnName("shipcountry");
 
+            /*
             modelBuilder.Entity<Customer>().ToTable("customers");
             modelBuilder.Entity<Customer>().Property(x => x.id).HasColumnName("customerid");
             modelBuilder.Entity<Customer>().Property(x => x.companyName).HasColumnName("companyname");
@@ -65,15 +66,15 @@ namespace DataLayer
             modelBuilder.Entity<Customer>().Property(x => x.country).HasColumnName("country");
             modelBuilder.Entity<Customer>().Property(x => x.phoneNumber).HasColumnName("phone");
             modelBuilder.Entity<Customer>().Property(x => x.fax).HasColumnName("fax");
-
-            /*
+            */
+            
             modelBuilder.Entity<OrderDetails>().ToTable("orderdetails");
-            modelBuilder.Entity<OrderDetails>().Property(x => x.orderId).HasColumnName("orderid");
+            modelBuilder.Entity<OrderDetails>().Property(x => x.Id).HasColumnName("orderid");
             modelBuilder.Entity<OrderDetails>().Property(x => x.productId).HasColumnName("productid");
             modelBuilder.Entity<OrderDetails>().Property(x => x.price).HasColumnName("unitprice");
             modelBuilder.Entity<OrderDetails>().Property(x => x.quantity).HasColumnName("quantity");
             modelBuilder.Entity<OrderDetails>().Property(x => x.discount).HasColumnName("discount");
-            */
+            
 
 
         }

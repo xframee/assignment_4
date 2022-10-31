@@ -4,7 +4,7 @@ namespace DataLayer.Model
 {
     public class Order
     {
-        public int orderId { get; set; }
+        public int Id { get; set; }
         public string customerId { get; set; }
         public int employeeId { get; set; }
         public DateOnly orderDate { get; set; }
@@ -16,6 +16,7 @@ namespace DataLayer.Model
         public string shipCity { get; set; }
         public string shipPostalCode { get; set; }
         public string shipcountry { get; set; }
+
 
         public OrderDetails details { get; set; }
     }
