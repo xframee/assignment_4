@@ -42,3 +42,41 @@ foreach (var item in orderDetails2)
     Console.WriteLine($"Order ID: {item.orderId}, Product ID: {item.productId}, Unit Price: {item.price}, Quantity: {item.quantity}, " +
         $"Discount: {item.discount}, Order Date: {item.orderDate}");
 }
+
+//test af funktion 6 der henter info om produkuft med produkt ID
+
+var productInfo = ds.GetProductById(33);
+
+foreach (var info in productInfo)
+{
+    Console.WriteLine($"Product Name: {info.productName}, Unit Price: {info.price}, Category Name: {info.categoryName}");
+}
+
+//test af funktion 7 der finder produkter der matcher en substring
+
+var productsMatching = ds.GetProductsContaining("Tofu");
+
+foreach (var product in productsMatching)
+{
+    Console.WriteLine($"Product Name: {product.pruductName} Category Name: {product.categoryName}");
+}
+
+//test af funktion 8 der finder produktnavn og kategoriavn ud fra produkt id
+var productAndCategoryName = ds.GetProductsByCategoryId(8);
+
+foreach (var item in productAndCategoryName)
+{
+    Console.WriteLine($"Product name: {item.productName}, Category Name: {item.categoryName}, Price: {item.price}");
+}
+
+//test af funktion 9 der finger categoris med category id
+Console.WriteLine(ds.GetCategorybyId(5));
+
+//test 10 få alle kategorier
+var categoriesAll = ds.GetCategories();
+
+foreach (var category in categoriesAll)
+{
+    Console.WriteLine($"Category ID:  {category.Id}, Category Name: {category.Name}, Description: {category.Description}");
+}
+

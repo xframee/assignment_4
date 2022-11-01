@@ -38,6 +38,7 @@ namespace DataLayer
             modelBuilder.Entity<Product>().ToTable("products");
             modelBuilder.Entity<Product>().Property(x => x.Id).HasColumnName("productid");
             modelBuilder.Entity<Product>().Property(x => x.Name).HasColumnName("productname");
+            modelBuilder.Entity<Product>().Property(x => x.price).HasColumnName("unitprice");
             modelBuilder.Entity<Product>().Property(x => x.CategoryId).HasColumnName("categoryid");
 
             modelBuilder.Entity<Order>().ToTable("orders");

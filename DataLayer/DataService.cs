@@ -6,12 +6,6 @@ namespace DataLayer;
 
 public class DataService
 {
-    public IList<Category> GetCategories()
-    {
-        using var db = new NorthwindContext();
-
-        return db.Categories.ToList();
-    }
 
     public string GetOrderById(int Id)
     {
@@ -94,5 +88,82 @@ public class DataService
             });
         return orderDetailsQuery.ToList();
     }
-}
 
+    public List<ProductStruct> GetProductById (int Id)
+    {
+        using var db = new NorthwindContext();
+
+        var productDetailsQuery = db.Products
+            .Include(x => x.Category)
+            .Where(x => x.Id == Id)
+            .Select(group => new ProductStruct
+            {
+                productName = group.Name,
+                price = group.price,
+                categoryName = group.Category.Name
+            });
+        return productDetailsQuery.ToList();
+    }
+
+    public List<ProductInfoStruct> GetProductsContaining(string subString)
+    {
+        using var db = new NorthwindContext();
+
+        var productsQuery = db.Products
+            .Include(x => x.Category)
+            .Where(x => x.Name.Contains(subString))
+            .Select(group => new ProductInfoStruct
+            {
+                pruductName = group.Name,
+                categoryName = group.Category.Name
+            });
+        return productsQuery.ToList();
+    }
+
+    public List<ProductStruct> GetProductsByCategoryId (int Id)
+    {
+        using var db = new NorthwindContext();
+
+        var productDetailsQuery = db.Products
+            .Include(x => x.Category)
+            .Where(x => x.Category.Id == Id)
+            .Select(group => new ProductStruct
+            {
+                productName = group.Name,
+                price = group.price,
+                categoryName = group.Category.Name
+            });
+        return productDetailsQuery.ToList();
+    }
+
+    public string GetCategorybyId (int Id)
+    {
+        using var db = new NorthwindContext();
+
+        string result = "";
+
+        var categories = db.Categories
+            .Where(x => x.Id == Id)
+            .ToList();
+
+        if (!categories.Any())
+        {
+            return null;
+        }
+
+        foreach (var item in categories)
+        {
+            result = ($"Category Name: {item.Name}");
+        }
+        return result;
+    }
+
+    public IList<Category> GetCategories()
+    {
+        using var db = new NorthwindContext();
+
+        return db.Categories.ToList();
+    }
+
+    public string 
+}
