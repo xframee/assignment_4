@@ -28,7 +28,7 @@ public class DataService
 
         if (!orders.Any())
         {
-            return ($"Couldnt find and order with ID: {Id}"); 
+            return ($"Couldnt find an order with ID: {Id}"); 
         }
 
         foreach (var order in orders)
@@ -42,6 +42,57 @@ public class DataService
         }
 
         return result;
+    }
+
+    public IList<Order> GetOrderByShip (string ship)
+    {
+        using var db = new NorthwindContext();
+
+        return db.Orders
+            .Where(x => x.shipName.Equals(ship))
+            .ToList();
+    }
+
+    public IList<Order> GetOrderByShip()
+    {
+        using var db = new NorthwindContext();
+
+        return db.Orders.ToList();
+    }
+
+    public List<OrderDetailClass> OrderDetalisByOrderId (int Id)
+    {
+        using var db = new NorthwindContext();
+
+        var orderDetailsQuery = db.OrderDetails
+            .Include(x => x.Product)
+            .Where(x => x.Id == Id)
+            .Select(group => new OrderDetailClass
+            {
+                name = group.Product.Name,
+                price = group.price,
+                quantity = group.quantity
+            });
+        return orderDetailsQuery.ToList();
+    }
+
+    public List<OrderDetailsForProduct> OrderDetailsByProductId (int Id)
+    {
+        using var db = new NorthwindContext();
+
+        var orderDetailsQuery = db.Orders
+            .Include(x => x.OrderDetails)
+            .Where(x => x.OrderDetails.productId == Id)
+            .Select(group => new OrderDetailsForProduct
+            {
+                orderId = group.Id,
+                productId = group.OrderDetails.productId,
+                price = group.OrderDetails.price,
+                quantity = group.OrderDetails.quantity,
+                discount = group.OrderDetails.discount,
+                orderDate = group.orderDate
+            });
+        return orderDetailsQuery.ToList();
     }
 }
 
