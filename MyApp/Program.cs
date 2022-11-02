@@ -80,3 +80,19 @@ foreach (var category in categoriesAll)
     Console.WriteLine($"Category ID:  {category.Id}, Category Name: {category.Name}, Description: {category.Description}");
 }
 
+//test af funktion 11 der tilføjer en kategri
+var newAddedCategory = ds.AddCategory("Toys","Dunno");
+
+foreach (var item in newAddedCategory)
+{
+    Console.WriteLine($"Category ID:  {item.Id}, Category Name: {item.Name}, Description: {item.Description}");
+}
+
+//test af funktion 12 der opdaterer en kategori
+Console.WriteLine(ds.UpdateCategory(10, "Kage", "Namme"));
+Console.WriteLine(ds.UpdateCategory(10000, "Kage", "Namme")); //tester om false ved ikke fundet id
+
+//test af funktion 13 der sletter en kategori
+Console.WriteLine(ds.DeleteCategory(13));
+Console.WriteLine(ds.DeleteCategory(10000)); //tester om false ved ikke fundet id
+

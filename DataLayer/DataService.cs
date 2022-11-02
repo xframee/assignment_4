@@ -165,5 +165,57 @@ public class DataService
         return db.Categories.ToList();
     }
 
-    public string 
+    public IList<Category> AddCategory(string name, string description)
+    {
+        using var db = new NorthwindContext();
+
+        var listofIds = db.Categories
+            .OrderBy(x => x.Id)
+            .Select(x => x.Id)
+            .ToList();
+
+        var lastId = listofIds.Last();
+        var newId = lastId + 1;
+
+        var cat = new Category { Id = newId, Name = name, Description = description };
+        db.Categories.Add(cat);
+        db.SaveChanges();
+
+        return db.Categories
+            .Where(x => x.Id == newId)
+            .ToList();
+    }
+
+    public bool UpdateCategory (int id, string name, string description)
+    {
+        using var db = new NorthwindContext();
+
+        var cat = db.Categories.Find(id);
+
+        if (cat == null)
+        {
+            return false;
+        }
+
+        cat.Name = name;
+        cat.Description = description;
+        db.SaveChanges();
+        return true;
+    }
+
+    public bool DeleteCategory (int id)
+    {
+        using var db = new NorthwindContext();
+
+        var cat = db.Categories.Find(id);
+
+        if (cat == null)
+        {
+            return false;
+        }
+
+        db.Categories.Remove(cat);
+        db.SaveChanges();
+        return true;
+    }
 }
