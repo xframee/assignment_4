@@ -1,20 +1,18 @@
 ﻿<Properties StartupConfiguration="{3F25C342-47BE-4423-8BA3-0B1DC41435BF}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyApp/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataLayer/DataService.cs">
     <Files>
-      <File FileName="MyApp/Program.cs" Line="96" Column="39" />
-      <File FileName="DataLayer/DataService.cs" Line="219" Column="21" />
-      <File FileName="DataLayer/NorthwindContext.cs" Line="44" Column="60" />
-      <File FileName="DataLayer/Model/OrderDetails.cs" Line="13" Column="41" />
+      <File FileName="MyApp/Program.cs" Line="11" Column="53" />
+      <File FileName="DataLayer/DataService.cs" Line="17" Column="43" />
+      <File FileName="DataLayer/NorthwindContext.cs" Line="6" Column="20" />
+      <File FileName="DataLayer/Model/OrderDetails.cs" Line="16" Column="45" />
       <File FileName="DataLayer/Model/Order.cs" Line="12" Column="25" />
       <File FileName="DataLayer/Model/Product.cs" Line="9" Column="37" />
       <File FileName="DataLayer/Model/Category.cs" Line="9" Column="49" />
       <File FileName="DataLayer/Model/OrderDetailClass.cs" Line="6" Column="41" />
-      <File FileName="DataLayer/Model/OrderDetailClass2.cs" Line="10" Column="21" />
       <File FileName="DataLayer/Model/ProductStruct.cs" Line="7" Column="39" />
       <File FileName="DataLayer/Model/ProductInfoStruct.cs" Line="11" Column="1" />
     </Files>
@@ -25,6 +23,7 @@
             <Node name="DataLayer" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Model" expanded="True" />
+              <Node name="DataService.cs" selected="True" />
             </Node>
             <Node name="MyApp" expanded="True" />
           </Node>
@@ -35,7 +34,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.codeAlong4 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MyApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
